@@ -1,2 +1,3 @@
-include 'akkamydb'
-
+include 'akkamydb', 'akkamydb-clinet'
+project(":akkamydb").name = "akkamydb"
+project(":akkamydb-clinet").name = "akkamydb-clinet"

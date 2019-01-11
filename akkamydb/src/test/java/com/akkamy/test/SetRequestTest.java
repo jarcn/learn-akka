@@ -8,11 +8,13 @@ import akka.actor.Props;
 import akka.testkit.TestActorRef;
 import com.akkamy.db.AkkademyDb;
 import com.akkamy.messages.SetRequest;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * @author chenjia on 2019/1/9
  */
+@Ignore
 public class SetRequestTest {
 
     ActorSystem actorSystem = ActorSystem.create();

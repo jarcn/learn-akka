@@ -1,4 +1,5 @@
-apply plugin :'eclipse'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 
 allprojects {
     group = 'com.akkamy'
@@ -6,9 +7,10 @@ allprojects {
 }
 
 subprojects {
-    apply plugin:'java'
-    apply plugin:'eclipse'
-    apply plugin:'maven'
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'maven'
+    apply plugin: 'idea'
 
     repositories {
         mavenLocal()
@@ -47,7 +49,7 @@ subprojects {
 }
 
 buildscript {
-    repositories{
+    repositories {
         mavenLocal()
         mavenCentral()
 

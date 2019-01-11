@@ -1,0 +1,11 @@
+apply plugin:'application'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8   // JDK
+
+dependencies {
+    compile project(":akkamydb")
+}
+

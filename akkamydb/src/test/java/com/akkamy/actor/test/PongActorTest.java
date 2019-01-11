@@ -11,6 +11,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import org.junit.Ignore;
 import org.junit.Test;
 import scala.compat.java8.FutureConverters;
 import scala.concurrent.Future;
@@ -18,6 +19,7 @@ import scala.concurrent.Future;
 /**
  * @author chenjia on 2019/1/10
  */
+@Ignore
 public class PongActorTest {
 
     ActorSystem system = ActorSystem.create();

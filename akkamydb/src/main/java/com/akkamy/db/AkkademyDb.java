@@ -29,7 +29,7 @@ public class AkkademyDb extends AbstractActor {
           }).match(GetRequest.class, msg -> {
               log.debug("查询接收到消息:{}", msg);
               Object result = Optional.ofNullable(this.map.get(msg.key))
-                .orElse(new Failure(new KeyNotFundException(msg.key)));
+                .orElse(new Failure(new KeyNotFundException("the key " + msg.key + " not have value")));
               sender().tell(result, self());
           }).matchAny(obj -> {
               log.debug("请求参数为:{}", obj);
