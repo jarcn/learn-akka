@@ -1,5 +1,6 @@
 package com.java8.ch1;
 
+import com.java8.bean.Apple;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -28,8 +29,14 @@ public class AppleTest {
         List<Apple> greenApples2 = filterApples(inventory, apple -> "green".equals(apple.getColor()));
         System.out.println(greenApples2);
 
-        List<Apple> apples1 = filterApples(inventory, apple -> apple.getWeight() > 150);
+        //将谓词函数中的行为使用lamada表达式 更简化代码
+        List<Apple> apples1 = filterApples(inventory, apple -> apple.getWeight() > 80);
         System.out.println(apples1);
+
+        //通过行为参数化传递代码 (组合行为)
+        List<Apple> apples2 = filterApples(inventory,
+          apple -> "green".equals(apple.getColor()) && apple.getWeight() > 150);
+        System.out.println(apples2);
 
     }
 

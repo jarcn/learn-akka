@@ -1,4 +1,4 @@
-package com.java8.ch1;
+package com.java8.bean;
 
 import lombok.Data;
 
@@ -9,9 +9,9 @@ import lombok.Data;
 public class Apple {
 
     private String color;
-    private int weight;
+    private Integer weight;
 
-    public Apple(int weight, String color) {
+    public Apple(Integer weight, String color) {
         this.color = color;
         this.weight = weight;
     }
