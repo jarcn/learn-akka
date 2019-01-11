@@ -59,7 +59,7 @@ public class AkkademyDb extends AbstractActor {
     }
 
     private Object delete(DelRequest msg) {
-        return Optional.of(map.remove(msg.key))
+        return Optional.ofNullable(map.remove(msg.key))
           .orElse(new Failure(new RuntimeException("the key " + msg.key + " not have value")));
     }
 
