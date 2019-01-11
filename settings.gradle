@@ -1,3 +1,4 @@
-include 'akkamydb', 'akkamydb-clinet'
+include 'akkamydb', 'akkamydb-clinet', 'java8'
 project(":akkamydb").name = "akkamydb"
 project(":akkamydb-clinet").name = "akkamydb-clinet"
+
