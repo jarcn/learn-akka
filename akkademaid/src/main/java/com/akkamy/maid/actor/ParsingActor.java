@@ -1,4 +1,4 @@
-package com.akkamy.maid.bean.actor;
+package com.akkamy.maid.actor;
 
 import akka.actor.AbstractActor;
 import akka.japi.pf.ReceiveBuilder;

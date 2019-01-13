@@ -1,4 +1,4 @@
-package com.akkamy.maid.bean.actor;
+package com.akkamy.maid.actor;
 
 
 import static scala.compat.java8.FutureConverters.toJava;
