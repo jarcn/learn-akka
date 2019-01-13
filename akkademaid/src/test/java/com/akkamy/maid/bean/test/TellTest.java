@@ -22,7 +22,7 @@ import scala.concurrent.Future;
  */
 public class TellTest {
 
-    ActorSystem system = ActorSystem.create("testSystem");
+    ActorSystem system = ActorSystem.create("chenjia");
     Timeout timeout = Timeout.longToTimeout(10000);
 
     TestProbe cacheProbe = new TestProbe(system);
